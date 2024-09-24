@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="digite o valor da temperatura" class="valorTemperatura">
+    <p>Selecione a temperatura de origem</p>
+    <select name="temperaturaOrigem" class="temperaturaOrigem">
+        <option value="1" selected>Celsius</option>
+        <option value="2" >Kelvin</option>
+        <option value="3">Farenheit</option>
+      </select>
+    <p>Selecione a temperatura de saida</p>
+    <select name="temperaturaTrans" class="temperaturaTrans">
+        <option value="1">Celsius</option>
+        <option value="2" selected>Kelvin</option>
+        <option value="3">Farenheit</option>
+    </select>
+    <button onclick="converter()">Converter</button>
+    <span class="resposta-transformada"></span>
+</body>
+<script src="main.js"></script>
+</html>
